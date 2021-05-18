@@ -6,7 +6,7 @@ The histogram of the previous exercise was created from a Numpy array ends, that
 Well then, what's the estimated chance that you'll reach 60 steps high if you play this Empire State Building game? The ends array is everything you need; it's available in your Python session so you can make calculations in the IPython Shell.
 
 Possible Answers
-48.8%
+48.8% answer
 73.9%
 78.4%
 95.9%
