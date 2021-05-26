@@ -10,4 +10,16 @@ ONe to many Relationship
 with a one-to-many relationship, a row in the left table may be repeated if 
 it is related to multiple rows in the right table.
 
+
+Enriching a dataset
+Setting how='left' with the .merge()method is a useful technique for enriching or
+ enhancing a dataset with additional information from a different table.
+
+
+
+
+
+
+
+
 '''
