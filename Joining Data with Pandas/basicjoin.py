@@ -176,6 +176,33 @@ gdp_returns = gdp_sp500[['gdp','returns']]
 # Print gdp_returns correlation
 print(gdp_returns.corr())
 
+#Merge_ordered
+
+# Use merge_ordered() to merge inflation, unemployment with inner join
+inflation_unemploy = pd.merge_ordered(inflation, unemployment, 
+                                      on='date', how='inner')
+
+# Print inflation_unemploy 
+print(inflation_unemploy)
+
+# Plot a scatter plot of unemployment_rate vs cpi of inflation_unemploy
+inflation_unemploy.plot(kind='scatter', x='unemployment_rate', y='cpi')
+plt.show()
+
+
+
+#merge_ordered() caution, multiple columns
+
+# Merge gdp and pop on date and country with fill and notice rows 2 and 3
+ctry_date = pd.merge_ordered(gdp,pop, on=("date","country"),
+                             fill_method='ffill')
+
+# Print ctry_date
+print(ctry_date)
+
+
+
+
 
 
 
