@@ -59,5 +59,140 @@ plt.show()
 
 
 #Point Plot 
+# Remove the lines joining the points
+sns.catplot(x="famrel", y="absences",
+			data=student_data,
+            kind="point",
+            capsize=0.2,
+            join=False)
+            
+# Show plot
+plt.show()
 
+
+
+
+# Import median function from numpy
+from numpy import median
+
+# Plot the median number of absences instead of the mean
+sns.catplot(x="romantic", y="absences",
+			data=student_data,
+            kind="point",
+            hue="school",
+            ci=None,
+            estimator=median)
+
+# Show plot
+plt.show()
+
+
+
+
+#Changing plot style and color      
+# Change the color palette to "RdBu"
+sns.set_style("whitegrid")
+
+sns.set_palette("RdBu")
+
+# Create a count plot of survey responses
+category_order = ["Never", "Rarely", "Sometimes", 
+                  "Often", "Always"]
+
+sns.catplot(x="Parents Advice", 
+            data=survey_data, 
+            kind="count", 
+            order=category_order)
+
+# Show plot
+plt.show()
+
+
+# Change the context to "poster"
+sns.set_context("poster")
+
+# Create bar plot
+sns.catplot(x="Number of Siblings", y="Feels Lonely",
+            data=survey_data, kind="bar")
+
+# Show plot
+plt.show()
+
+
+# Set the style to "darkgrid"
+sns.set_style("darkgrid")
+
+# Set a custom color palette
+sns.set_palette(["#39A7D0","#36ADA4"])
+
+# Create the box plot of age distribution by gender
+sns.catplot(x="Gender", y="Age", 
+            data=survey_data, kind="box")
+
+# Show plot
+plt.show()
+
+
+
+
+#Adding titles and labels
+
+Note 
+object type         plot type                            characteristic
+FacetGrid         relplot(),catplot()              Can creat  subplots
+AxesSubplot     scatteerplot,countplot            Only create single plot
+
+
+
+
+
+
+
+
+# Create scatter plot
+g = sns.relplot(x="weight", 
+                y="horsepower", 
+                data=mpg,
+                kind="scatter")
+
+# Add a title "Car Weight vs. Horsepower"
+g.fig.suptitle("Car Weight vs. Horsepower")
+
+# Show plot
+plt.show()
+
+
+# Create line plot
+g = sns.lineplot(x="model_year", y="mpg_mean", 
+                 data=mpg_mean,
+                 hue="origin")
+
+# Add a title "Average MPG Over Time"
+g.set_title("Average MPG Over Time")
+
+# Add x-axis and y-axis labels
+g.set(xlabel="Car Model Year", 
+      ylabel="Average MPG")
+
+# Show plot
+plt.show()
+
+
+
+final Example 
+# Set the figure style to "dark"
+sns.set_style("dark")
+
+# Adjust to add subplots per gender
+g = sns.catplot(x="Village - town", y="Likes Techno", 
+                data=survey_data, kind="bar",
+                col = "Gender")
+
+# Add title and axis labels
+g.fig.suptitle("Percentage of Young People Who Like Techno", y=1.02)
+g.set(xlabel="Location of Residence", 
+       ylabel="% Who Like Techno")
+
+# Show plot
+plt.show()
 
