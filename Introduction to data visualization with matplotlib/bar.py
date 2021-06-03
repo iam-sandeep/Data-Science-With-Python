@@ -171,3 +171,29 @@ ax.plot(seattle_weather["MONTH"], seattle_weather["MLY-TAVG-NORMAL"])
 plt.show()
 
 
+'''
+Automate your visualization
+One of the main strengths of Matplotlib is that it can be automated to 
+adapt to the data that it receives as input. For example, if you receive 
+data that has an unknown number of categories,
+ you can still create a bar plot that has bars for each category.
+
+'''
+
+fig, ax = plt.subplots()
+
+# Loop over the different sports branches
+for sport in sports:
+  # Extract the rows only for this sport
+  sport_df = summer_2016_medals[summer_2016_medals["Sport"] == sport]
+  # Add a bar for the "Weight" mean with std y error bar
+  ax.bar(sport, sport_df["Weight"].mean(), yerr=sport_df["Weight"].std())
+
+ax.set_ylabel("Weight")
+ax.set_xticklabels(sports, rotation=90)
+
+# Save the figure to file
+fig.savefig("sports_weights.png")
+
+
+
