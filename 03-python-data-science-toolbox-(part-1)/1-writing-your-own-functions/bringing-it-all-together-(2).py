@@ -23,6 +23,7 @@ its value to 1. Use the loop variable entry in your code.
 -Call the count_entries() function by passing to it tweets_df and the name of the column,
 'lang'. Assign the result of the call to the variable result.
 '''
+
 # Import pandas
 import pandas as pd
 
