@@ -97,3 +97,6 @@ sns.lmplot(data=df,
 
 plt.show()
 plt.clf()
+
+
+
