@@ -17,7 +17,7 @@ showed in the video, you'll need to apply the method read() to the object file.
 -Check again that the file is closed as you did above.
 '''
 # Open a file: file
-file = open('../_datasets/moby_dick.txt', mode='r')
+file = open('moby_dick.txt', mode='r')
 
 # Print it
 print(file.read())
