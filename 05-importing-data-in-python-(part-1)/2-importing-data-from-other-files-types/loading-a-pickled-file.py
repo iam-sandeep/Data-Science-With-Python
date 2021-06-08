@@ -23,7 +23,7 @@ argument will be a string of two letters, one signifying 'read only', the other 
 import pickle
 
 # Open pickle file and load data: d
-with open('data.pkl', 'rb') as file:
+with open('data.pkl', 'rb') as file: #rb = read and b = binary
     d = pickle.load(file)
 
 # Print d

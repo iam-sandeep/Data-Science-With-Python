@@ -36,7 +36,7 @@ df1 = xls.parse(0, skiprows=[0], names=['Country', 'AAM due to War (2002)'])
 print(df1.head())
 
 # Parse the first column of the second sheet and rename the column: df2
-df2 = xls.parse(0, parse_cols=[0], skiprows=[0], names=['Country'])
+df2 = xls.parse(0, usecols=[0], skiprows=[0], names=['Country'])
 
 # Print the head of the DataFrame df2
 print(df2.head())

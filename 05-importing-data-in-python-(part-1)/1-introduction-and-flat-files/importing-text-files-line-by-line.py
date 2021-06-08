@@ -27,7 +27,7 @@ Instructions
 times within the context manager.
 '''
 # Read & print the first 3 lines
-with open('../_datasets/moby_dick.txt') as file:
+with open('moby_dick.txt') as file:
     print(file.readline())
     print(file.readline())
     print(file.readline())
