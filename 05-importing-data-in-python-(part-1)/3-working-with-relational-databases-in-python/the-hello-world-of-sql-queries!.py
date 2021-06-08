@@ -18,7 +18,7 @@ from sqlalchemy import create_engine
 import pandas as pd
 
 # Create engine: engine
-engine = create_engine('sqlite:///../_datasets/Chinook.sqlite')
+engine = create_engine('sqlite:///Chinook.sqlite')
 
 # Open engine connection: con
 con = engine.connect()
