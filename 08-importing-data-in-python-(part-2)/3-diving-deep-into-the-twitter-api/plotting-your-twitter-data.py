@@ -12,3 +12,6 @@ cd = ['clinton', 'trump', 'sanders', 'cruz']
 ax = sns.barplot(cd, [clinton, trump, sanders, cruz])
 ax.set(ylabel="count")
 plt.show()
+
+
+
