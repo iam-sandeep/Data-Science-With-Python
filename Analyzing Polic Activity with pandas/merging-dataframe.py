@@ -31,3 +31,25 @@ print(ri_weather.shape)
 
 # Set 'stop_datetime' as the index of 'ri_weather'
 ri_weather.set_index('stop_datetime', inplace=True)
+
+
+'''
+Selecting from a multi-indexed Series
+The output of a single .groupby() operation on multiple columns is a Series with a MultiIndex. Working with this type of object is similar to working with a DataFrame:
+
+The outer index level is like the DataFrame rows.
+The inner index level is like the DataFrame columns.
+In this exercise, you'll practice accessing data from a multi-indexed Series using the .loc[] accessor.
+
+'''
+# Save the output of the groupby operation from the last exercise
+arrest_rate = ri_weather.groupby(['violation', 'rating']).is_arrested.mean()
+
+# Print the 'arrest_rate' Series
+print(arrest_rate)
+
+# Print the arrest rate for moving violations in bad weather
+print(arrest_rate.loc['Moving violation', 'bad'])
+
+# Print the arrest rates for speeding violations in all three weather conditions
+print(arrest_rate.loc['Speeding'])
