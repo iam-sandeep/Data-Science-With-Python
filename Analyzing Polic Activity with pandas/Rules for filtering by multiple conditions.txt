@@ -1,0 +1,5 @@
+1. Ampersand(&): only include rows that satisfy both conditions
+2. Pipe ( | ): include rows that satisfy either conditions
+3. Each conditions must be surrended by parenthisis.
+4. conditions can check for equality(==), inequality(!=), etc
+5. Can use more than two conditions.
