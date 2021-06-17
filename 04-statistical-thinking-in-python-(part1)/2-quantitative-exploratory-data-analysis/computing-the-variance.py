@@ -27,8 +27,7 @@ versicolor_petal_length = np.array([4.7,  4.5,  4.9,  4.,  4.6,  4.5,  4.7,  3.3
                                     4.2,  4.2,  4.2,  4.3,  3.,  4.1])
 
 # Array of differences to mean: differences
-differences = np.array(versicolor_petal_length -
-                       np.mean(versicolor_petal_length))
+differences = versicolor_petal_length - np.mean(versicolor_petal_length)
 
 # Square the differences: diff_sq
 diff_sq = differences ** 2

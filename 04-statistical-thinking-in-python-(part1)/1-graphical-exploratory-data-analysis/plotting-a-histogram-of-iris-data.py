@@ -33,7 +33,7 @@ provided NumPy array versicolor_petal_length.
 -Show the histogram using plt.show().
 '''
 # Import plotting modules
-import numpy as np
+import numpy as np #not necessary in 2021 course
 import matplotlib.pyplot as plt
 import seaborn as sns
 

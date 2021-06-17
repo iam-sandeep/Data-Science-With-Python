@@ -19,7 +19,7 @@ Instructions
 since we are doing 1000 simulations.
 -Write a for loop with 1000 iterations to compute the number of defaults per 100 loans using
 the perform_bernoulli_trials() function. It accepts two arguments: the number of trials n -
-in this case 100 - and the probability of success p - in this case the probability of a default,
+in this case 100 - and the probability   of success p - in this case the probability of a default,
 which is 0.05. On each iteration of the loop store the result in an entry of n_defaults.
 -Plot a histogram of n_defaults. Include the normed=True keyword argument so that the height of
 the bars of the histogram indicate the probability.
