@@ -41,7 +41,7 @@ np.random.seed(42)
 samples = np.random.normal(mu, sigma, 1000000)
 
 # Compute the fraction that are faster than 144 seconds: prob
-prob = len(samples[np.where(samples <= 144)]) / len(samples)
+prob = np.sum(samples <= 144) / len(samples)
 
 # Print the result
 print('Probability of besting Secretariat:', prob)
