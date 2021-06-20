@@ -13,3 +13,5 @@ p = np.sum(perm_replicates >= heritability_scandens) / len(perm_replicates)
 
 # Print the p-value
 print('p-val =', p)
+
+#Important
