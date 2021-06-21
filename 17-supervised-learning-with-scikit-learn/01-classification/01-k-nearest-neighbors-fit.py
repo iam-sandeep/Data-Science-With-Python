@@ -25,5 +25,5 @@ X = df.drop('party', axis=1).values
 knn = KNeighborsClassifier(n_neighbors=6)
 
 # Fit the classifier to the data
-knn.fit(X,y)
+knn.fit(X,y) #x is in capital
 
