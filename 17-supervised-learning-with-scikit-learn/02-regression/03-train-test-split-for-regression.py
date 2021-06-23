@@ -15,7 +15,7 @@ Using X and y, create training and test sets such that 30% is used for testing a
 Create a linear regression regressor called reg_all, fit it to the training set, and evaluate it on the test set.
 Compute and print the R2
 R
-2
+2  
  score using the .score() method on the test set.
 Compute and print the RMSE. To do this, first compute the Mean Squared Error using the mean_squared_error() function with the arguments y_test and y_pred, and then take its square root using np.sqrt().
 '''
