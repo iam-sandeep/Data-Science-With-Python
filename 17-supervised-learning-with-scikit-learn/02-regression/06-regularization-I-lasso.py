@@ -32,3 +32,8 @@ plt.plot(range(len(df_columns)), lasso_coef)
 plt.xticks(range(len(df_columns)), df_columns.values, rotation=60)
 plt.margins(0.02)
 plt.show()
+
+
+
+#Lasso is great for feature selection, but when building regression models, 
+# Ridge regression should be your first choice.
