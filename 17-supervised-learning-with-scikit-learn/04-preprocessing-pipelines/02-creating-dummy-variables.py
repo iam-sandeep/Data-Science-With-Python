@@ -13,7 +13,7 @@ Hit 'Submit Answer to print the new columns of df_region and take note of how on
 # Create dummy variables: df_region
 df_region = pd.get_dummies(df)
 
-# Print the columns of df_region
+# Print the columns of df_region    
 print(df_region.columns)
 
 # Create dummy variables with drop_first=True: df_region
