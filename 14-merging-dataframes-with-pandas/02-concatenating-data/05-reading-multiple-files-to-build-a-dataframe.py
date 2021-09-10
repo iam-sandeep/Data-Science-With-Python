@@ -36,3 +36,4 @@ medals = pd.concat(medals, axis='columns')
 
 # Print medals
 print(medals)
+
