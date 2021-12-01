@@ -41,3 +41,5 @@ course = Template("We are offering a 3-month beginner course on $tool just for $
 
 # Substitute identifiers with three variables
 print(course.substitute(tool=our_tool, fee=our_fee, pay=our_pay))
+
+
